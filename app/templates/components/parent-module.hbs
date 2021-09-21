@@ -1,0 +1,8 @@
+<EditModule
+	@cg={{this.cg}}
+	@isOpen={{this.isOpen}}
+	@toggleShow={{this.toggleShow}}
+/>
+<button {{on "click" this.toggleShow}}>Show/Hide</button>
+<button {{on "click" this.toggleCG}}>Toggle CG</button>
+{{yield}}

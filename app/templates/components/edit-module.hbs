@@ -1,0 +1,13 @@
+isShowTag1 updated from TrackedReset: {{this.isShowTag1}}<br/>
+isShowTag2 updated from Computed: {{this.isShowTag2}}<br/>
+isShowTag2 updated from TrackedReset with custom fn: {{this.isShowTag3}}<br/>
+
+{{#if this.showTag}}
+  Show this<br/>
+  {{this.cg.name}}-{{this.cg.totalBudget}}<br/>
+  TotalBudget: {{this.totalBudget}}<br/>
+{{/if}}
+
+<button {{on "click" this.showHide}}>Toggle CG Info</button>
+
+{{yield}}
